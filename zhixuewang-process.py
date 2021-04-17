@@ -13,7 +13,7 @@ file_output = "./res.txt"
 #读入文件
 def index():
     try:
-        open_json = open(file_url,'r')
+        open_json = open(file_url,'rb')
         load_json = json.loads(open_json.read())
         clear(load_json)
     except:
